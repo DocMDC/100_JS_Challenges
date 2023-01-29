@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.qbank-interface-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+/*===================SIDE NAV===================*/
+.side-nav-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    background-color: #394955;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav {
+    height: 20%;
+    background-color: #003249;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-container p {
+    font-size: 2.5rem;
+    border: 2px solid #ffffff;
+    padding: 5px;
+}
+
+.top-nav h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.top-nav h2 {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.gap-nav {
+    height: 5%;
+}
+
+.middle-nav {
+    height: 65%;
+    background-color: #394955;
+    padding-bottom: 300px;
+}
+
+.welcome-container, .create-test-container, .previous-test-container, .performance-container {
+    height: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.welcome-container, .create-test-container, .previous-test-container, .performance-container {
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.welcome-container:hover, .create-test-container:hover, .previous-test-container:hover, .performance-container:hover {
+    background-color: #003249;
+    cursor: pointer;
+}
+
+.welcome-container:hover .welcome-btn-container button, .create-test-container:hover .create-test-button-container button, .previous-test-container:hover .previous-test-button-container button, .performance-container:hover .performance-button-container button{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.welcome-container:hover .welcome-icon-container span, .create-test-container:hover .create-test-icon-container span, .previous-test-container:hover .previous-test-icon-container span, .performance-container:hover .performance-icon-container span {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.welcome-icon-container span, .create-test-container span, .previous-test-icon-container span, .performance-icon-container span {
+    transform: scale(1.4);
+    color: #a7b1c2;
+}
+
+.welcome-btn-container button, .create-test-button-container button, .previous-test-button-container button, .performance-button-container button {
+    height: 40px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #a7b1c2;
+    font-size: 1.5rem;
+}
+
+.bottom-nav {
+    height: 10%;
+    background-color: #003249;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.bottom-nav h2 {
+    color: #ffffff;
+}
+
+.bottom-nav h5 {
+    color: #a7b1c2;
+}
+
+/*===================MAIN DISPLAY===================*/
+
+.main-display-container {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    background-color: #f3f3f4;
+    overflow-y: scroll;
+}
+
+.main-display-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    color: #737378;
+}
+
+.selections {
+    position: absolute;
+    left: 15px;
+    top: 12%;
+    right: 15px;
+    bottom: 5%;
+    background-color: #ffffff;
+    overflow-y: scroll;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5%;
+    background-color: #ffffff;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #737378;
+}

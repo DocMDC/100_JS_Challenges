@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-container {
+  width: 400px;
+  height: 500px;
+  background-color: black;
+}
+
+.display {
+  height: 20%;
+  border-bottom: 1px solid gray;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.input-container {
+  color: white;
+  height: 80%;
+  font-size: 1.5rem;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+  "ac ac del divide"
+  "seven eight nine calc-multiply"
+  "four five six calc-subtract"
+  "one two three calcxw-add"
+  "calc-zero calc-zero calc-dot calc-equal"
+}
+
+.ac {
+  grid-area: ac;
+}
+
+.del {
+  grid-area: del;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.multiply {
+  grid-area: calc-multiply;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.subtract {
+  grid-area: calc-subtract;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.add {
+  grid-area: calc-add;
+}
+
+.zero {
+  grid-area: calc-zero;
+}
+
+.dot {
+  grid-area: calc-dot;
+}
+
+.equal {
+  grid-area: calc-equal;
+}

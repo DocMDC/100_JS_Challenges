@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  background-color: #EEEEEE;
+  box-sizing: border-box;
+}
+
+.font-link {
+  font-family: 'Inter',
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+}
+
+.header__container {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d267d;
+  padding: 15px 30px;
+}
+
+.header__home__link, .header__login__link {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  background-color: #3d267d;
+}
+
+.header__home__text {
+  border: 2px solid white;
+  padding: 5px;
+  background-color: #3d267d;
+  color: white;
+}
+
+.header__login__text {
+  background-color: #3d267d;
+  color: white;
+}
+
+.hero__container {
+  margin-top: 15px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 425px;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 20px;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+}
+
+.hero__cta {
+  border: none;
+  width: 200px;
+  height: 50px;
+  background-color: #3d267d;
+  color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 2rem;
+  font-family: "Inter";
+  cursor: pointer;
+}
+
+.login__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__logo {
+  margin-bottom: 50px;
+  font-size: 2rem;
+  color: white;
+  background-color: #3d267d;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.login__logo__link {
+  text-decoration: none;
+}
+
+.login__form {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.login__form > h4 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  background-color: white;
+}
+
+.login__username, .login__password {
+  width: 70%;
+  height: 30px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+.login__button {
+  border: none;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/*====================SOFTWARE TOOLS====================*/
+.software__header__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #3d267d;
+  color: white;
+}
+
+.software__header__nav > h4 {
+  background-color: white;
+  color: #3d267d;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.software__header__logout {
+  background-color: white;
+  color: #3d267d;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.software__header__logout > h4 {
+  background-color: white;
+}
+
+.software__toolbar {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+  border-bottom: 1px solid black;
+  padding: 0px 300px;
+  background-color: #f8f9fa;
+}
+
+.software__toolbar__tool {
+  cursor: pointer;
+  background-color: #f8f9fa; 
+}
+
+.toolbar__font__family {
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+  border: none;
+}
+
+.toolbar__font__size {
+  width: 40px;
+  height: 30px;
+  border: none;
+  font-size: 1rem;
+}
+
+.software__font__color {
+  border-bottom: 5px solid black;
+  font-size: 1.2rem;
+}
+/*====================SOFTWARE TEXTAREA====================*/
+.software__textarea__container {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding-top: 50px;
+  overflow-y: scroll;
+}
+
+.software__textarea {
+  width: 60%;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 75px;
+  background-color: white;
+  resize: none;
+  height: 150%;
+  margin-bottom: 30px;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.software__textarea:focus {
+  outline: none;
+}

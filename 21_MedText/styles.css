@@ -1,0 +1,82 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --gray: #f8f9fa;
+}
+
+body {
+    margin: 0;
+}
+
+.app {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+/*================Nav================*/
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+/*================Tools================*/
+
+.tools {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #ffffff;
+    border-top: 2px solid #edeeef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools--create-smart-text {
+    color: #5f6367;
+}
+
+/*================TEXT CONTAINER================*/
+.text-container {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    overflow-y: scroll;
+}
+
+.text {
+    width: 60%;
+    height: 150%;
+    border: none;
+    resize: none;
+    padding: 50px;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2)
+}
+
+.text:focus {
+    outline: none;
+}
+
+.text::placeholder {
+    font-family: sans-serif;
+}
+
