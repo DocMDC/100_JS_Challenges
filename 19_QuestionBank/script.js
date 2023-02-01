@@ -75,6 +75,14 @@ let reversedColor = false
 let examFinished = false
 let totalPercentCorrect
 
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 1100) {
+        calculatorEl.classList.add('hide')
+        notesContentContainer.classList.add('hide')
+        labContentContainer.classList.add('hide')
+    }
+})
+
 
 const labArray = [
         'Serum - Alanine aminotransferase (ALT)', 'Serum - Aspartate aminotransferase (AST)', 'Serum - Alkaline phosphatase', 'Serum - Amylase', 'CSF - Cell count', 'CSF - Chloride', 'CSF - Gamma globulin', 'CSF - Glucose', 'Hematologic - Erythrocyte count', 'Hematologic - Male', 'Hematologic - Female', 'Hematologic - Chloride', 'Hematologic - Gamma globulin', 'Hematologic - Glucose', 'Urine - Calcium', 'Urine - Creatinine clearance', 'Urine - Male', 'Urine - Female', 'Urine - Osmolality', 'Urine - Oxalate'

@@ -40,7 +40,7 @@
                     <div class="next-image-container">
                         <img src="Assets/backArrow.png" alt="next-arrow">
                     </div>
-                    <p>Next</p>
+                    <p class="next-button-top-header">Next</p>
                 </div>
             </div>
             <div class="test-aids">
@@ -413,13 +413,18 @@
         </div>
     </div>
     <div class="complete-screen hide">
-        <div class="complete-screen-title">
-            <h1>You have completed this section</h1>
+        <div class="complete-screen-content">
+            <div class="complete-screen-title">
+                <h1>You have completed this section</h1>
+            </div>
+            <div class="complete-screen-results-summary">
+                <h4>Results Summary</h4>
+                <p>You have correctly answered:<br><span id="results-number-correct">#</span> out of <span id="results-total-questions">#</span> for this examination - <span id="results-percent-correct">#</span>% correct</p>
+            </div>
         </div>
-        <div class="complete-screen-results-summary">
-            <h4>Results Summary</h4>
-            <p>You have correctly answered:<br><span id="results-number-correct">#</span> out of <span id="results-total-questions">#</span> for this examination - <span id="results-percent-correct">#</span>% correct</p>
+        <div class="complete-screen-border-top">
         </div>
+        <div class="complete-screen-border-bottom"></div>
     </div>
 </body>
 </html>
